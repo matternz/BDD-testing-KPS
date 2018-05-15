@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kps.tests.BusinessFiguresTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-05-13T19:06:38" hostname="sliverbeast8-2.local" time="0.244">
+  <properties/>
+  <testcase name="testNegativeExpenditure" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testInitialState" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testRevenue" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testNegativeRevenue" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testExpenditure" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testNegativeExpenditure" classname="kps.tests.BusinessFiguresTests" time="0.001"/>
+  <testcase name="testInitialState" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testRevenue" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testNegativeRevenue" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <testcase name="testExpenditure" classname="kps.tests.BusinessFiguresTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

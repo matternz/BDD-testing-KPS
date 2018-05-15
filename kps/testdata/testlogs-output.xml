@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+<mail>
+<from>Wellington, New Zealand</from>
+<to>Rome, Italy</to>
+<weight>100.0</weight>
+<volume>5.0</volume>
+<priority>International Air</priority>
+<day>MONDAY</day>
+</mail>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Rome, Italy</to>
+<company>Air NZ</company>
+<type>Air</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>350.0</maxWeight>
+<maxVolume>50.0</maxVolume>
+<day>THURSDAY</day>
+<frequency>36.0</frequency>
+<duration>16.0</duration>
+</cost>
+<price>
+<from>Wellington, New Zealand</from>
+<to>Rome, Italy</to>
+<priority>International Air</priority>
+<weightcost>6.0</weightcost>
+<volumecost>8.0</volumecost>
+</price>
+<discontinue>
+<from>Wellington, New Zealand</from>
+<to>Sydney, Australia</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+</discontinue>
+</document>

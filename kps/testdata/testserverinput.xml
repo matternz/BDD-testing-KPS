@@ -1,0 +1,62 @@
+<log>
+	<cost>
+		<company>Air NZ</company>
+		<to>Singapore City, Singapore</to>
+		<from>Wellington, New Zealand</from>
+		<type>Air</type>
+		<weightcost>6</weightcost>
+		<volumecost>6</volumecost>
+		<maxWeight>350</maxWeight>
+		<maxVolume>50</maxVolume>
+		<duration>16</duration>
+		<frequency>36</frequency>
+		<day>Thursday</day>
+	</cost>
+
+	<price>
+		<to>Singapore City, Singapore</to>
+		<from>Wellington, New Zealand</from>
+		<priority>International Air</priority>
+		<weightcost>10</weightcost>
+		<volumecost>20</volumecost>
+	</price>
+
+	<mail>
+		<day>Monday</day>
+		<to>Singapore City, Singapore</to>
+		<from>Wellington, New Zealand</from>
+		<weight>100</weight>
+		<volume>5</volume>
+		<priority>International Air</priority>
+	</mail>
+
+	<cost>
+		<company>Kelburn Airways</company>
+		<to>Sydney, Australia</to>
+		<from>Wellington, New Zealand</from>
+		<type>Air</type>
+		<weightcost>6</weightcost>
+		<volumecost>6</volumecost>
+		<maxWeight>350</maxWeight>
+		<maxVolume>50</maxVolume>
+		<duration>16</duration>
+		<frequency>36</frequency>
+		<day>Thursday</day>
+	</cost>
+
+	<price>
+		<to>Sydney, Australia</to>
+		<from>Wellington, New Zealand</from>
+		<priority>International Air</priority>
+		<weightcost>6</weightcost>
+		<volumecost>8</volumecost>
+	</price>
+
+	<discontinue>
+		<company>Kelburn Airways</company>
+		<to>Sydney, Australia</to>
+		<from>Wellington, New Zealand</from>
+		<type>Air</type>
+	</discontinue>
+</log>
+

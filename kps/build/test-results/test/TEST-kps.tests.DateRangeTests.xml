@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kps.tests.DateRangeTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2018-05-13T19:06:39" hostname="sliverbeast8-2.local" time="0.026">
+  <properties/>
+  <testcase name="testOutOfRange" classname="kps.tests.DateRangeTests" time="0.013"/>
+  <testcase name="testBoundary" classname="kps.tests.DateRangeTests" time="0.001"/>
+  <testcase name="testBackwardRange" classname="kps.tests.DateRangeTests" time="0.001"/>
+  <testcase name="testValidConstructor" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <testcase name="testZeroRange" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <testcase name="testInRange" classname="kps.tests.DateRangeTests" time="0.001"/>
+  <testcase name="testOutOfRange" classname="kps.tests.DateRangeTests" time="0.001"/>
+  <testcase name="testBoundary" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <testcase name="testBackwardRange" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <testcase name="testValidConstructor" classname="kps.tests.DateRangeTests" time="0.001"/>
+  <testcase name="testZeroRange" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <testcase name="testInRange" classname="kps.tests.DateRangeTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

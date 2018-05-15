@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kps.tests.LogTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-13T19:06:38" hostname="sliverbeast8-2.local" time="0.389">
+  <properties/>
+  <testcase name="testValidLogReadingAndWriting" classname="kps.tests.LogTests" time="0.084"/>
+  <testcase name="testValidLogReading" classname="kps.tests.LogTests" time="0.002"/>
+  <testcase name="testValidLogWriting" classname="kps.tests.LogTests" time="0.004"/>
+  <testcase name="testValidLogReadingAndWriting" classname="kps.tests.LogTests" time="0.007"/>
+  <testcase name="testValidLogReading" classname="kps.tests.LogTests" time="0.002"/>
+  <testcase name="testValidLogWriting" classname="kps.tests.LogTests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Done reading
+Mail delivery from Wellington, New Zealand to Rome, Italy
+Service by air from Air NZ from Wellington, New Zealand to Rome, Italynow costs us 6.0 by weight and 6.0 by volume. It starts on a THURSDAY, repeats every 36.0 hours
+and takes 16.0 to complete
+Now charging customers 6.0 by weight and 8.0 by volume from Wellington, New Zealand to Rome, Italy
+Kelburn Airways discontinued transport from Wellington, New Zealand to Sydney, Australia by air
+Done reading
+Mail delivery from Wellington, New Zealand to Rome, Italy
+Service by air from Air NZ from Wellington, New Zealand to Rome, Italynow costs us 6.0 by weight and 6.0 by volume. It starts on a THURSDAY, repeats every 36.0 hours
+and takes 16.0 to complete
+Now charging customers 6.0 by weight and 8.0 by volume from Wellington, New Zealand to Rome, Italy
+Kelburn Airways discontinued transport from Wellington, New Zealand to Sydney, Australia by air
+]]></system-err>
+</testsuite>

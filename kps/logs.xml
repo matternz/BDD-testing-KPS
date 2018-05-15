@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+<cost>
+<from>Invercargill, New Zealand</from>
+<to>Dunedin, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>4.0</weightcost>
+<volumecost>4.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Dunedin, New Zealand</from>
+<to>Invercargill, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>4.0</weightcost>
+<volumecost>4.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Dunedin, New Zealand</from>
+<to>Nelson, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Nelson, New Zealand</from>
+<to>Dunedin, New Zealand</to>
+<company>P</company>
+<type>Land</type>
+<weightcost>8.0</weightcost>
+<volumecost>8.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Palmerston North, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>5.0</weightcost>
+<volumecost>5.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Palmerston North, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>5.0</weightcost>
+<volumecost>5.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Palmerston North, New Zealand</from>
+<to>New Plymouth, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>7.0</weightcost>
+<volumecost>7.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>New Plymouth, New Zealand</from>
+<to>Palmerston North, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>7.0</weightcost>
+<volumecost>7.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Palmerston North, New Zealand</from>
+<to>Gisborne, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Palmerston North, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Palmerston North, New Zealand</from>
+<to>Napier, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>7.0</weightcost>
+<volumecost>7.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Napier, New Zealand</from>
+<to>Palmerston North, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>7.0</weightcost>
+<volumecost>7.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Napier, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>3.0</weightcost>
+<volumecost>3.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Napier, New Zealand</from>
+<to>Gisborne, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>3.0</weightcost>
+<volumecost>3.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Napier, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>2.0</weightcost>
+<volumecost>2.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Napier, New Zealand</from>
+<to>Gisborne, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>2.0</weightcost>
+<volumecost>2.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Gisborne, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>1.0</weightcost>
+<volumecost>1.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Gisborne, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>4.0</weightcost>
+<volumecost>4.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Gisborne, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>NZ Deliveries</company>
+<type>Land</type>
+<weightcost>4.0</weightcost>
+<volumecost>4.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>New Plymouth, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>1.0</weightcost>
+<volumecost>1.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Whangarei, New Zealand</to>
+<company>Martin Courier</company>
+<type>Land</type>
+<weightcost>2.0</weightcost>
+<volumecost>2.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Nelson, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>Inter-Landmasses</company>
+<type>Sea</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Nelson, New Zealand</to>
+<company>Inter-Landmasses</company>
+<type>Sea</type>
+<weightcost>6.0</weightcost>
+<volumecost>6.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Singapore City, Singapore</from>
+<to>Wellington, New Zealand</to>
+<company>Pacific Boating</company>
+<type>Sea</type>
+<weightcost>30.0</weightcost>
+<volumecost>30.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Singapore City, Singapore</to>
+<company>Pacific Boating</company>
+<type>Sea</type>
+<weightcost>30.0</weightcost>
+<volumecost>30.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Singapore City, Singapore</from>
+<to>Auckland, New Zealand</to>
+<company>Pacific Boating</company>
+<type>Sea</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Singapore City, Singapore</to>
+<company>Pacific Boating</company>
+<type>Sea</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Place, Martin Island</to>
+<company>Inter-Landmasses</company>
+<type>Sea</type>
+<weightcost>8.0</weightcost>
+<volumecost>8.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Place, Martin Island</from>
+<to>Auckland, New Zealand</to>
+<company>Inter-Landmasses</company>
+<type>Sea</type>
+<weightcost>8.0</weightcost>
+<volumecost>8.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Dunedin, New Zealand</from>
+<to>Invercargill, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>15.0</weightcost>
+<volumecost>15.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Invercargill, New Zealand</from>
+<to>Dunedin, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>15.0</weightcost>
+<volumecost>15.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Dunedin, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Dunedin, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>19.0</weightcost>
+<volumecost>19.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>19.0</weightcost>
+<volumecost>19.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>Cheap NZ Air</company>
+<type>Air</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>Cheap NZ Air</company>
+<type>Air</type>
+<weightcost>20.0</weightcost>
+<volumecost>20.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Napier, New Zealand</from>
+<to>Wellington, New Zealand</to>
+<company>Cheap NZ Air</company>
+<type>Air</type>
+<weightcost>12.0</weightcost>
+<volumecost>12.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Napier, New Zealand</to>
+<company>Cheap NZ Air</company>
+<type>Air</type>
+<weightcost>12.0</weightcost>
+<volumecost>12.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Napier, New Zealand</from>
+<to>Auckland, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>14.0</weightcost>
+<volumecost>14.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Napier, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>14.0</weightcost>
+<volumecost>14.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Sydney, Australia</from>
+<to>Auckland, New Zealand</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>26.0</weightcost>
+<volumecost>26.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Sydney, Australia</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>26.0</weightcost>
+<volumecost>26.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Sydney, Australia</from>
+<to>Auckland, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>27.0</weightcost>
+<volumecost>27.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Sydney, Australia</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>27.0</weightcost>
+<volumecost>27.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Montreal, Canada</from>
+<to>Auckland, New Zealand</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>25.0</weightcost>
+<volumecost>25.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Montreal, Canada</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>25.0</weightcost>
+<volumecost>25.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Singapore City, Singapore</from>
+<to>Auckland, New Zealand</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>23.0</weightcost>
+<volumecost>23.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Auckland, New Zealand</from>
+<to>Singapore City, Singapore</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>23.0</weightcost>
+<volumecost>23.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Singapore City, Singapore</from>
+<to>Wellington, New Zealand</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>45.0</weightcost>
+<volumecost>45.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Singapore City, Singapore</to>
+<company>Kelburn Airways</company>
+<type>Air</type>
+<weightcost>45.0</weightcost>
+<volumecost>45.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Singapore City, Singapore</from>
+<to>Wellington, New Zealand</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>48.0</weightcost>
+<volumecost>48.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<cost>
+<from>Wellington, New Zealand</from>
+<to>Singapore City, Singapore</to>
+<company>Super Airlines</company>
+<type>Air</type>
+<weightcost>48.0</weightcost>
+<volumecost>48.0</volumecost>
+<maxWeight>200.0</maxWeight>
+<maxVolume>200.0</maxVolume>
+<day>MONDAY</day>
+<frequency>36.0</frequency>
+<duration>24.0</duration>
+</cost>
+<price>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<priority>Domestic Air</priority>
+<weightcost>10.0</weightcost>
+<volumecost>10.0</volumecost>
+</price>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<price>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<priority>Domestic Air</priority>
+<weightcost>100.0</weightcost>
+<volumecost>100.0</volumecost>
+</price>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<mail>
+<from>DUNEDIN, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<cost>
+<from>AUCKLAND, NEW ZEALAND</from>
+<to>DUNEDIN, NEW ZEALAND</to>
+<company>fooble</company>
+<type>Air</type>
+<weightcost>39.0</weightcost>
+<volumecost>38.0</volumecost>
+<maxWeight>10000.0</maxWeight>
+<maxVolume>10000.0</maxVolume>
+<day>MONDAY</day>
+<frequency>12.0</frequency>
+<duration>1.0</duration>
+</cost>
+<price>
+<from>AUCKLAND, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<priority>Domestic Air</priority>
+<weightcost>100.0</weightcost>
+<volumecost>100.0</volumecost>
+</price>
+<mail>
+<from>AUCKLAND, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+<mail>
+<from>AUCKLAND, NEW ZEALAND</from>
+<to>WELLINGTON, NEW ZEALAND</to>
+<weight>10.0</weight>
+<volume>10.0</volume>
+<priority>Domestic Air</priority>
+<day>TUESDAY</day>
+</mail>
+</document>
