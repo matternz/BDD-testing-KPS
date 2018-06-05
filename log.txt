@@ -1,1 +1,2 @@
 15/05/2018 10:00pm downloaded and created github repo
+5/06/2018 5:00pm fixed first gherkin test given to us. add cases for different types of mail priority
