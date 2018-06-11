@@ -99,8 +99,10 @@ public class MailSteps {
 
     @Then("^the cost is \\$(\\d+)$")
     public void theCostIs$(int expectedCost) throws Throwable {
-        Destination to = new Destination("Palmerston North", "New Zealand");
-        Destination from = new Destination("Wellington", "New Zealand");
+        System.out.println(this.toCity);
+        System.out.println(this.toCountry);
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
         Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
