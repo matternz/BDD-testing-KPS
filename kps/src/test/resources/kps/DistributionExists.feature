@@ -13,7 +13,7 @@ Feature: Test if distribution centres exists
         Given an initial map
         Given a parcel that weighs 1kg
         Given a parcel with volume 1m3
-        And I send the parcel from "Wellington" "New Zealand"
+        And I send the parcel from "Wstandardellington" "New Zealand"
         And I send the parcel to "Hamilton" "New Zealand"
         And I send the parcel by domestic standard mail
         Then the cost is $5
@@ -43,7 +43,7 @@ Feature: Test if distribution centres exists
         And I send the parcel from "Auckland" "New Zealand"
         And I send the parcel to "Wellington" "New Zealand"
         And I send the parcel by domestic standard mail
-        Then the cost is $5
+        Then the cost is $1
 
     Scenario: Christchurch distribution centre exists
         Given an initial map
@@ -61,4 +61,4 @@ Feature: Test if distribution centres exists
         And I send the parcel from "Wellington" "New Zealand"
         And I send the parcel to "Dunedin" "New Zealand"
         And I send the parcel by domestic standard mail
-        Then the cost is $5
+        Then the cost is $6

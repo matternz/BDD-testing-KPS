@@ -105,6 +105,7 @@ public class MailSteps {
         Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        System.out.println(route.calculateCost(mail.weight, mail.volume));
         Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
     }
 }
