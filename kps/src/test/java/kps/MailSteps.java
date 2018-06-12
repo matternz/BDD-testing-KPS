@@ -106,7 +106,8 @@ public class MailSteps {
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
         // System.out.println(route.calculateCost(mail.weight, mail.volume));    
-        Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
+        //Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
+        Assert.assertEquals((int)expectedCost, (int)route.calculateCost(mail.weight, mail.volume));
     }
 
     @Then("^the route type is \"([^\"]*)\"$")
