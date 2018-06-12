@@ -98,14 +98,39 @@ public class MailSteps {
     // }
 
     @Then("^the cost is \\$(\\d+)$")
-    public void theCostIs$(int expectedCost) throws Throwable {
-        System.out.println(this.toCity);
-        System.out.println(this.toCountry);
+    public void theCostIs(int expectedCost) throws Throwable {
+        // System.out.println(this.toCity);
+        // System.out.println(this.toCountry);
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        System.out.println(route.calculateCost(mail.weight, mail.volume));
+        // System.out.println(route.calculateCost(mail.weight, mail.volume));    
         Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
     }
+
+    @Then("^the route type is \"([^\"]*)\"$")
+    public void theRouteTypeIs(String expectedRoute) throws Throwable{
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        Mail mail = new Mail(to, from, mailPriority, weight, volume);
+        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        Assert.assertTrue(expectedRoute.equals(route.type.AIR.toString()));
+    }
+
+    @Then("^this should produce an error")
+    public void destinationExists() {
+        try{
+            Destination to = new Destination(this.toCity, this.toCountry);
+            Destination from = new Destination(this.fromCity, this.fromCountry);
+            Mail mail = new Mail(to, from, mailPriority, weight, volume);
+            TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        }
+        catch (Exception e) {
+            Assert.assertTrue(e instanceof Exception);
+            return;
+        }
+        Assert.fail();
+    }
+    
 }

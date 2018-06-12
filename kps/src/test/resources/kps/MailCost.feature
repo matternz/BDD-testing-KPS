@@ -9,7 +9,7 @@ Feature: Mail cost changes based on priority, volume, weight, destination
         And I send the parcel by domestic standard mail
         Then the cost is $5
 
-#TODO in crease priority
+#TODO increase priority
     Scenario: Increased priority
         Given an initial map
         Given a parcel that weighs 1kg
