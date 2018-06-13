@@ -7,7 +7,7 @@ Feature: Send via standard and air, overseas
         And I send the parcel from "Auckland" "New Zealand"
         And I send the parcel to "Sydney" "Australia"
         And I send the parcel by international standard mail
-        Then the cost is $27
+        Then the cost is $26
 
     Scenario: Send mail to Sydney Australia with international air mail
         Given an initial map

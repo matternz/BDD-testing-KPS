@@ -14,6 +14,7 @@ import kps.server.UserRecord;
 import kps.server.UserRecord.Role;
 import kps.server.logs.LogItem;
 import kps.server.logs.MailDelivery;
+import kps.server.CustomerRoute;
 import kps.util.MailPriority;
 import kps.util.RouteNotFoundException;
 import kps.util.XMLFormatException;
@@ -107,7 +108,7 @@ public class MailSteps {
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
         // System.out.println(route.calculateCost(mail.weight, mail.volume));    
         //Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
-        Assert.assertEquals((int)expectedCost, (int)route.calculateCost(mail.weight, mail.volume));
+        Assert.assertEquals(expectedCost, route.calculateCost(mail.weight, mail.volume), 0.0);
     }
 
     @Then("^the route type is \"([^\"]*)\"$")
@@ -121,17 +122,53 @@ public class MailSteps {
 
     @Then("^this should produce an error")
     public void destinationExists() {
-        try{
+        try {
             Destination to = new Destination(this.toCity, this.toCountry);
             Destination from = new Destination(this.fromCity, this.fromCountry);
             Mail mail = new Mail(to, from, mailPriority, weight, volume);
             TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             Assert.assertTrue(e instanceof Exception);
             return;
         }
         Assert.fail();
     }
     
+    @And("^I send a domestic standard mail")
+    public void sendDomesticStandardMail() {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        CustomerRoute cr = new CustomerRoute(to, from, mailPriority, 1, 1);
+        server.getBusinessFigures().sendMail(1, 1, 1, 1, 1, cr);
+    }
+
+    @Then("^the total revenue is \\$(\\d+)$")
+    public void totalRevenue(int expectedRevenue) throws Throwable {
+        Assert.assertEquals(expectedRevenue, server.getBusinessFigures().getRevenue(), 0.0);
+    }
+
+    @Then("^the total expenditure is \\$(\\d+)$")
+    public void totalExpenditure(int expectedExpenditure) throws Throwable {
+        Assert.assertEquals(expectedExpenditure, server.getBusinessFigures().getExpenditure(), 0.0);
+    }
+
+    @Then("^the total volume is (\\d+)m3$")
+    public void totalVolume(int expectedVolume) throws Throwable {
+        Assert.assertEquals(expectedVolume, server.getBusinessFigures().getTotalVolume(), 0.0);
+    }
+
+    @Then("^the total weight is (\\d+)kg$")
+    public void totalWeight(int expectedWeight) throws Throwable {
+        Assert.assertEquals(expectedWeight, server.getBusinessFigures().getTotalWeight(), 0.0);
+    }
+    
+    @Then("^the total number of items is (\\d+)$")
+    public void totalItems(int expectedNumItems) throws Throwable {
+        Assert.assertEquals(expectedNumItems, server.getBusinessFigures().getMailCount(), 0.0);
+    }
+
+    @Then("^the average delivery days is (\\d+)$")
+    public void totalDays(int expectedDays) throws Throwable {
+        Assert.assertEquals(expectedDays, server.getBusinessFigures().getAverageDeliveryDays(), 0.0);
+    }
 }
