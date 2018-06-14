@@ -6,4 +6,5 @@
 12/06/2018 8:00pm added test for international mail, changed test for cost to use assertEquals
 13/06/2018 6:00pm added tests for business figures, fixed other tests, added new features to the mailstep.java, changed assertEquals to use epsilon 
 14/06/2018 6:00pm added more tests for different types of mail. added java code for testing if price greater or less than differnet prioritys
-14/06/2018 9:00pm added more tests and fixed up ones that were causing issues
+14/06/2018 8:00pm added more tests and fixed up ones that were causing issues
+14/06/2018 9:00pm removed duplicate tests

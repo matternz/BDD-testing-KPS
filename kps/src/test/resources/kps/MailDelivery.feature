@@ -1,14 +1,5 @@
 Feature: See if you can send mail and test if correct errors produced at the right time
 
-    Scenario: Standard delivery from Wellington to Auckland
-        Given an initial map
-        Given a parcel that weighs 1kg
-        Given a parcel with volume 1m3
-        And I send the parcel from "Wellington" "New Zealand"
-        And I send the parcel to "Auckland" "New Zealand"
-        And I send the parcel by domestic standard mail
-        Then the cost is $5
-
     Scenario: Cannot send mail that has the destination the same as the origin
         Given an initial map
         Given a parcel that weighs 1kg
