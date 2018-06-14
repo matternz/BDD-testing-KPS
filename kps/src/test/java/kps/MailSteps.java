@@ -110,6 +110,42 @@ public class MailSteps {
         //Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
         Assert.assertEquals(expectedCost, route.calculateCost(mail.weight, mail.volume), 0.0);
     }
+    
+    @Then("^the cost is more than domestic standard mail$")
+    public void costMoreThanDomesticStandardDelivery() throws Throwable {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        Mail mail = new Mail(to, from, mailPriority, weight, volume);
+        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        Assert.assertTrue(6 < route.calculateCost(mail.weight, mail.volume));
+    }
+
+    @Then("^the cost is less than domestic air mail$")
+    public void costLessThanDomesticAirDelivery() throws Throwable {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        Mail mail = new Mail(to, from, mailPriority, weight, volume);
+        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        Assert.assertTrue(6 >= route.calculateCost(mail.weight, mail.volume));
+    }
+
+    @Then("^the cost is more than international standard mail$")
+    public void costMoreThanInternationalStandardDelivery() throws Throwable {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        Mail mail = new Mail(to, from, mailPriority, weight, volume);
+        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        Assert.assertTrue(6 < route.calculateCost(mail.weight, mail.volume));
+    }
+
+    @Then("^the cost is less than international air mail$")
+    public void costLessThanInternationalAirDelivery() throws Throwable {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        Mail mail = new Mail(to, from, mailPriority, weight, volume);
+        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
+        Assert.assertTrue(6 >= route.calculateCost(mail.weight, mail.volume));
+    }
 
     @Then("^the route type is \"([^\"]*)\"$")
     public void theRouteTypeIs(String expectedRoute) throws Throwable{
@@ -171,4 +207,5 @@ public class MailSteps {
     public void totalDays(int expectedDays) throws Throwable {
         Assert.assertEquals(expectedDays, server.getBusinessFigures().getAverageDeliveryDays(), 0.0);
     }
+
 }

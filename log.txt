@@ -5,3 +5,4 @@
 12/06/2018 7:00pm added test for invalid destinations, and air type delivery. fixed other tests and updated java code
 12/06/2018 8:00pm added test for international mail, changed test for cost to use assertEquals
 13/06/2018 6:00pm added tests for business figures, fixed other tests, added new features to the mailstep.java, changed assertEquals to use epsilon 
+14/06/2018 6:00pm added more tests for different types of mail. added java code for testing if price greater or less than differnet prioritys
