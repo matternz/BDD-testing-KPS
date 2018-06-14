@@ -47,7 +47,7 @@ public class MailSteps {
     public void a_parcel_with_volume_m(int volume) {
         this.volume = volume;
     }
-    
+
     @Given("^a parcel that measures (\\d+) cc$")
     public void a_parcel_that_measures_cc(int measure) throws Throwable {
         this.measure = measure;
@@ -85,8 +85,6 @@ public class MailSteps {
         this.mailPriority = MailPriority.INTERNATIONAL_AIR;
     }
 
-
-
     // this is wrong don't copy
     // @Then("^the cost is \\$(\\d+)$")
     // public void theCostIs$(int expectedCost) throws Throwable {
@@ -106,49 +104,68 @@ public class MailSteps {
         Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        // System.out.println(route.calculateCost(mail.weight, mail.volume));    
-        //Assert.assertTrue(expectedCost == route.calculateCost(mail.weight, mail.volume));
+        // System.out.println(route.calculateCost(mail.weight, mail.volume));
+        // Assert.assertTrue(expectedCost == route.calculateCost(mail.weight,
+        // mail.volume));
         Assert.assertEquals(expectedCost, route.calculateCost(mail.weight, mail.volume), 0.0);
     }
-    
+
     @Then("^the cost is more than domestic standard mail$")
     public void costMoreThanDomesticStandardDelivery() throws Throwable {
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
-        Mail mail = new Mail(to, from, mailPriority, weight, volume);
-        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        Assert.assertTrue(6 < route.calculateCost(mail.weight, mail.volume));
+        Mail stanMail = new Mail(to, from, MailPriority.DOMESTIC_STANDARD, weight, volume);
+        Mail airMail = new Mail(to, from, MailPriority.DOMESTIC_AIR, weight, volume);
+        TransportRoute stanRoute = server.getTransportMap().calculateRoute(stanMail).get(0);
+        TransportRoute airRoute = server.getTransportMap().calculateRoute(airMail).get(0);
+        double airCost = airRoute.calculateCost(airMail.weight, airMail.volume);
+        double stanCost = stanRoute.calculateCost(stanMail.weight, stanMail.volume);
+        Assert.assertTrue("airCost: " + airCost + " should be greater than stanCost: " + stanCost, airCost > stanCost);
     }
 
     @Then("^the cost is less than domestic air mail$")
     public void costLessThanDomesticAirDelivery() throws Throwable {
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
-        Mail mail = new Mail(to, from, mailPriority, weight, volume);
-        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        Assert.assertTrue(6 >= route.calculateCost(mail.weight, mail.volume));
+        Mail stanMail = new Mail(to, from, MailPriority.DOMESTIC_STANDARD, weight, volume);
+        Mail airMail = new Mail(to, from, MailPriority.DOMESTIC_AIR, weight, volume);
+        TransportRoute stanRoute = server.getTransportMap().calculateRoute(stanMail).get(0);
+        TransportRoute airRoute = server.getTransportMap().calculateRoute(airMail).get(0);
+        double airCost = airRoute.calculateCost(airMail.weight, airMail.volume);
+        double stanCost = stanRoute.calculateCost(stanMail.weight, stanMail.volume);
+        Assert.assertTrue("airCost: " + airCost + " should be greater than stanCost: " + stanCost, airCost >  stanCost);
     }
 
-    @Then("^the cost is more than international standard mail$")
+    @Then("^the cost is more than or equal to international standard mail$")
     public void costMoreThanInternationalStandardDelivery() throws Throwable {
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
-        Mail mail = new Mail(to, from, mailPriority, weight, volume);
-        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        Assert.assertTrue(6 < route.calculateCost(mail.weight, mail.volume));
+        Mail stanMail = new Mail(to, from, MailPriority.INTERNATIONAL_STANDARD, weight, volume);
+        Mail airMail = new Mail(to, from, MailPriority.INTERNATIONAL_AIR, weight, volume);
+        TransportRoute stanRoute = server.getTransportMap().calculateRoute(stanMail).get(0);
+        TransportRoute airRoute = server.getTransportMap().calculateRoute(airMail).get(0);
+        double airCost = airRoute.calculateCost(airMail.weight, airMail.volume);
+        double stanCost = stanRoute.calculateCost(stanMail.weight, stanMail.volume);
+        Assert.assertTrue("airCost: " + airCost + " should be greater than stanCost: " + stanCost, airCost >=  stanCost);
+    
     }
 
-    @Then("^the cost is less than international air mail$")
+    @Then("^the cost is less than or equal to international air mail$")
     public void costLessThanInternationalAirDelivery() throws Throwable {
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
-        Mail mail = new Mail(to, from, mailPriority, weight, volume);
-        TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        Assert.assertTrue(6 >= route.calculateCost(mail.weight, mail.volume));
+        Mail stanMail = new Mail(to, from, MailPriority.INTERNATIONAL_STANDARD, weight, volume);
+        Mail airMail = new Mail(to, from, MailPriority.INTERNATIONAL_AIR, weight, volume);
+        TransportRoute stanRoute = server.getTransportMap().calculateRoute(stanMail).get(0);
+        TransportRoute airRoute = server.getTransportMap().calculateRoute(airMail).get(0);
+        double airCost = airRoute.calculateCost(airMail.weight, airMail.volume);
+        double stanCost = stanRoute.calculateCost(stanMail.weight, stanMail.volume);
+        Assert.assertTrue("airCost: " + airCost + " should be greater than stanCost: " + stanCost, airCost >=  stanCost);
+    
     }
 
     @Then("^the route type is \"([^\"]*)\"$")
-    public void theRouteTypeIs(String expectedRoute) throws Throwable{
+    public void theRouteTypeIs(String expectedRoute) throws Throwable {
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
@@ -169,7 +186,7 @@ public class MailSteps {
         }
         Assert.fail();
     }
-    
+
     @And("^I send a domestic standard mail")
     public void sendDomesticStandardMail() {
         Destination to = new Destination(this.toCity, this.toCountry);
@@ -197,7 +214,7 @@ public class MailSteps {
     public void totalWeight(int expectedWeight) throws Throwable {
         Assert.assertEquals(expectedWeight, server.getBusinessFigures().getTotalWeight(), 0.0);
     }
-    
+
     @Then("^the total number of items is (\\d+)$")
     public void totalItems(int expectedNumItems) throws Throwable {
         Assert.assertEquals(expectedNumItems, server.getBusinessFigures().getMailCount(), 0.0);

@@ -7,7 +7,7 @@ Feature: Send via standard and air, overseas
         And I send the parcel from "Auckland" "New Zealand"
         And I send the parcel to "Sydney" "Australia"
         And I send the parcel by international standard mail
-        Then the cost is $26
+        Then the cost is less than or equal to international air mail
 
     Scenario: Send mail to Sydney Australia with international air mail
         Given an initial map
@@ -16,7 +16,7 @@ Feature: Send via standard and air, overseas
         And I send the parcel from "Auckland" "New Zealand"
         And I send the parcel to "Sydney" "Australia"
         And I send the parcel by international air mail
-        Then the cost is $27
+        Then the cost is more than or equal to international standard mail
 
     Scenario: Send mail to Auckland with international standard mail
         Given an initial map
@@ -24,8 +24,8 @@ Feature: Send via standard and air, overseas
         Given a parcel with volume 1m3
         And I send the parcel from "Sydney" "Australia"
         And I send the parcel to "Auckland" "New Zealand"
-        And I send the parcel by international air mail
-        Then the cost is $27
+        And I send the parcel by international standard mail
+        Then the cost is less than or equal to international air mail
 
     Scenario: Send mail to Auckland with international air mail
         Given an initial map
@@ -34,7 +34,7 @@ Feature: Send via standard and air, overseas
         And I send the parcel from "Sydney" "Australia"
         And I send the parcel to "Auckland" "New Zealand"
         And I send the parcel by international air mail
-        Then the cost is $27
+        Then the cost is more than or equal to international standard mail
 
     Scenario: Send mail to Auckland with domestic standard mail
         Given an initial map
