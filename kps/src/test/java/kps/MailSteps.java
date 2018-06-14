@@ -85,28 +85,12 @@ public class MailSteps {
         this.mailPriority = MailPriority.INTERNATIONAL_AIR;
     }
 
-    // this is wrong don't copy
-    // @Then("^the cost is \\$(\\d+)$")
-    // public void theCostIs$(int expectedCost) throws Throwable {
-    // Destination to = new Destination("Palmerston North", "New Zealand");
-    // Destination from = new Destination("Wellington", "New Zealand");
-    // Mail mail = new Mail(to, from, MailPriority.DOMESTIC_STANDARD, 1.0, 1.0);
-    // TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-    // Assert.assertTrue(expectedCost == route.calculateCost(mail.weight,
-    // mail.volume));
-    // }
-
     @Then("^the cost is \\$(\\d+)$")
     public void theCostIs(int expectedCost) throws Throwable {
-        // System.out.println(this.toCity);
-        // System.out.println(this.toCountry);
         Destination to = new Destination(this.toCity, this.toCountry);
         Destination from = new Destination(this.fromCity, this.fromCountry);
         Mail mail = new Mail(to, from, mailPriority, weight, volume);
         TransportRoute route = server.getTransportMap().calculateRoute(mail).get(0);
-        // System.out.println(route.calculateCost(mail.weight, mail.volume));
-        // Assert.assertTrue(expectedCost == route.calculateCost(mail.weight,
-        // mail.volume));
         Assert.assertEquals(expectedCost, route.calculateCost(mail.weight, mail.volume), 0.0);
     }
 
@@ -195,6 +179,14 @@ public class MailSteps {
         server.getBusinessFigures().sendMail(1, 1, 1, 1, 1, cr);
     }
 
+    @And("^I send a profit lost domestic standard mail")
+    public void sendProfitLostDomesticStandardMail() {
+        Destination to = new Destination(this.toCity, this.toCountry);
+        Destination from = new Destination(this.fromCity, this.fromCountry);
+        CustomerRoute cr = new CustomerRoute(to, from, mailPriority, 1, 1);
+        server.getBusinessFigures().sendMail(1, 2, 1, 1, 1, cr);
+    }
+
     @Then("^the total revenue is \\$(\\d+)$")
     public void totalRevenue(int expectedRevenue) throws Throwable {
         Assert.assertEquals(expectedRevenue, server.getBusinessFigures().getRevenue(), 0.0);
@@ -223,6 +215,11 @@ public class MailSteps {
     @Then("^the average delivery days is (\\d+)$")
     public void totalDays(int expectedDays) throws Throwable {
         Assert.assertEquals(expectedDays, server.getBusinessFigures().getAverageDeliveryDays(), 0.0);
+    }
+
+    @Then("^the number of critical routes is (\\d+)$")
+    public void numberOfCriticalRoutes(int routes) throws Throwable{
+        Assert.assertEquals(routes, server.getBusinessFigures().getCriticalRoutes().size());
     }
 
 }

@@ -2,8 +2,6 @@ Feature: checks if business features are correctly calculated
 
     Scenario: check business figures increase correctly
         Given an initial map
-        Given a parcel that weighs 1kg
-        Given a parcel with volume 1m3
         And I send the parcel from "Wellington" "New Zealand"
         And I send the parcel to "Auckland" "New Zealand"
         And I send the parcel by domestic standard mail
@@ -17,8 +15,6 @@ Feature: checks if business features are correctly calculated
 
     Scenario: check business figures after more than 1 package
         Given an initial map
-        Given a parcel that weighs 1kg
-        Given a parcel with volume 1m3
         And I send the parcel from "Wellington" "New Zealand"
         And I send the parcel to "Auckland" "New Zealand"
         And I send the parcel by domestic standard mail
@@ -30,6 +26,16 @@ Feature: checks if business features are correctly calculated
         Then the total weight is 2kg
         Then the total number of items is 2
         Then the average delivery days is 1
+        Then the number of critical routes is 0
 
+    Scenario: critical route is added when profit lost package is sent
+        Given an initial map
+        Given a parcel that weighs 1kg
+        Given a parcel with volume 1m3
+        And I send the parcel from "Wellington" "New Zealand"
+        And I send the parcel to "Auckland" "New Zealand"
+        And I send the parcel by domestic standard mail
+        And I a profit lost domestic standard mail
+        Then the number of critical routes is 1
 
     
